@@ -1,4 +1,4 @@
-##Safety Stock Calculations for Inventory Management
+## Safety Stock Calculations for Inventory Management
 
 Periodically, we need to order product to replenish our inventory. When we do this, we have in mind a future period for which we are attempting to address demand along with an estimate the demand in that period.
 
