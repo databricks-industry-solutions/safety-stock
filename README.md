@@ -1,24 +1,13 @@
-<img src=https://d1r5llqwmkrl74.cloudfront.net/notebooks/fsi/fs-lakehouse-logo-transparent.png width="600px">
+##Safety Stock Calculations for Inventory Management
 
-[![DBR](https://img.shields.io/badge/DBR-10.4ML-red?logo=databricks&style=for-the-badge)](https://docs.databricks.com/release-notes/runtime/10.4ml.html)
-[![CLOUD](https://img.shields.io/badge/CLOUD-ALL-blue?logo=googlecloud&style=for-the-badge)](https://cloud.google.com/databricks)
-[![POC](https://img.shields.io/badge/POC-10_days-green?style=for-the-badge)](https://databricks.com/try-databricks)
+Periodically, we need to order product to replenish our inventory. When we do this, we have in mind a future period for which we are attempting to address demand along with an estimate the demand in that period.
 
-*Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.*
+Our estimates are never perfectly accurate.  Instead, when we use modern forecasting techniques, we are estimating the *mean* demand across a range of potential demand values. Improvements in model accuracy narrow the range of variability around this predicted mean, but we still expect to be below the mean 50% of the time and above it the other 50% (as that's simply the nature of a mean value). 
 
-___
-<john.doe@databricks.com>
+When actual demand exceeds our forecasts, we run the risk of a stockout (out of stock) situation with its associated potential loss of sales and reduced customer satisfaction. To avoid this, we often include additional units of stock, above the forecasted demand, in our replenishment  orders. The amount of this *safety stock* depends on our estimates of variability in the demand for this upcoming period and the percentage of time we are willing to risk an out of stock situation.  
 
-___
-
-
-IMAGE TO REFERENCE ARCHITECTURE
-
+For a more in-depth examination of safety stock calculations, please refer to the blog associated with this notebook.  The purpose of the information provided here is to examine how forecast data can be employed to effectively calculate safety stock requirements leveraging standard formulas.
 ___
 
 &copy; 2022 Databricks, Inc. All rights reserved. The source in this notebook is provided subject to the Databricks License [https://databricks.com/db-license-source].  All included or referenced third party libraries are subject to the licenses set forth below.
-
-| library                                | description             | license    | source                                              |
-|----------------------------------------|-------------------------|------------|-----------------------------------------------------|
-| PyYAML                                 | Reading Yaml files      | MIT        | https://github.com/yaml/pyyaml                      |
 
