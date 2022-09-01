@@ -272,7 +272,8 @@ forecast_evals_cv.createOrReplaceTempView('forecast_evals_cv_tmp')
 # MAGIC -- the join to historical ensures we have
 # MAGIC -- historical data married to forecasts 
 # MAGIC -- across december 2017
-# MAGIC 
+# MAGIC CREATE DATABASE IF NOT EXISTS solacc_safety_stock;
+# MAGIC USE solacc_safety_stock;
 # MAGIC DROP TABLE IF EXISTS forecasts;
 # MAGIC 
 # MAGIC CREATE TABLE forecasts
