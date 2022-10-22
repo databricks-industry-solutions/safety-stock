@@ -1,4 +1,9 @@
 # Databricks notebook source
+# MAGIC %md 
+# MAGIC You may find this series of notebooks at https://github.com/databricks-industry-solutions/safety-stock. For more information about this solution accelerator, visit https://www.databricks.com/solutions/accelerators/safety-stock.
+
+# COMMAND ----------
+
 # MAGIC %md ##Safety Stock Calculations for Inventory Management
 # MAGIC 
 # MAGIC Periodically, we need to order product to replenish our inventory. When we do this, we have in mind a future period for which we are attempting to address demand along with an estimate the demand in that period.
