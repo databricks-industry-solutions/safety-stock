@@ -12,7 +12,7 @@
 # MAGIC 
 # MAGIC When actual demand exceeds our forecasts, we run the risk of a stockout (out of stock) situation with its associated potential loss of sales and reduced customer satisfaction. To avoid this, we often include additional units of stock, above the forecasted demand, in our replenishment  orders. The amount of this *safety stock* depends on our estimates of variability in the demand for this upcoming period and the percentage of time we are willing to risk an out of stock situation.  
 # MAGIC 
-# MAGIC For a more in-depth examination of safety stock calculations, please refer to the blog associated with this notebook.  The purpose of the information provided here is to examine how forecast data can be employed to effectively calculate safety stock requirements leveraging standard formulas.
+# MAGIC For a more in-depth examination of safety stock calculations, please refer to the [blog](https://www.databricks.com/blog/2020/04/22/how-a-fresh-approach-to-safety-stock-analysis-can-optimize-inventory.html) associated with this notebook.  The purpose of the information provided here is to examine how forecast data can be employed to effectively calculate safety stock requirements leveraging standard formulas.
 
 # COMMAND ----------
 
